@@ -1,0 +1,16 @@
+﻿<Window x:Class="prdv.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prdv"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Disponibilité" HorizontalAlignment="Left" Margin="232,0,0,0" VerticalAlignment="Center" Height="52" Width="168" Click="OpenDisponibiliteWindow"/>
+        <Button Content="Rendez-vous" HorizontalAlignment="Left" Margin="447,0,0,0" VerticalAlignment="Center" Height="52" Width="168" Click="OpenRendezvousWindow"/>
+        <Label Content="Gestion pris de rendez-vous" HorizontalAlignment="Center" Margin="0,37,0,0" VerticalAlignment="Top" FontSize="48" FontWeight="Bold"/>
+        <Label Content="By Hicham Lamrani" HorizontalAlignment="Center" Margin="0,385,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

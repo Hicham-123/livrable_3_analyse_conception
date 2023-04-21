@@ -1,0 +1,20 @@
+﻿<Window x:Class="prdv.Rendezvous"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prdv"
+        mc:Ignorable="d"
+        Title="Rendezvous" Height="516" Width="800">
+    <Grid>
+        <DataGrid x:Name="gridEmployee" d:ItemsSource="{d:SampleData ItemCount=5}" CanUserAddRows="False" Margin="0,0,0,315"/>
+        <ComboBox x:Name="txtCombobox" HorizontalAlignment="Left" Margin="140,201,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtHeureDebut" HorizontalAlignment="Left" Margin="140,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="txtHeureFin" HorizontalAlignment="Left" Margin="140,282,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" />
+        <Label Content="Jour" HorizontalAlignment="Left" Margin="27,201,0,0" VerticalAlignment="Top"/>
+        <Label Content="Heure debut" HorizontalAlignment="Left" Margin="27,241,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.211,0.017"/>
+        <Label Content="Heure fin&#xD;&#xA;" HorizontalAlignment="Left" Margin="27,278,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnRechercher" Content="Rechercher" HorizontalAlignment="Left" Margin="27,348,0,0" VerticalAlignment="Top" Width="105" Click="btnRechercher_Click"/>
+        <Button x:Name="btnReset" Content="Reset" HorizontalAlignment="Left" Margin="171,348,0,0" VerticalAlignment="Top" Width="89" Click="btnReset_Click"/>
+    </Grid>
+</Window>
